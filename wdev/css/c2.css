@@ -1,0 +1,20 @@
+html{
+    font-size: 20px;
+}
+h1{
+    color:blue;
+}
+h2{
+    color:red;
+}
+p{
+    color:black;
+}
+.green{
+    color:brown;
+}
+#wall{
+    color:burlywood;
+    background-color: gold;
+    text-transform: uppercase;
+}

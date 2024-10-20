@@ -1,0 +1,162 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "type": "java",
+      "name": "New",
+      "request": "launch",
+      "mainClass": "New",
+      "projectName": "codes_c091a2b7"
+    },
+    {
+      "type": "java",
+      "name": "g6",
+      "request": "launch",
+      "mainClass": "g6",
+      "projectName": "codes_c091a2b7"
+    },
+    {
+      "type": "java",
+      "name": "ex4",
+      "request": "launch",
+      "mainClass": "ex4",
+      "projectName": "codes_c091a2b7"
+    },
+    {
+      "type": "java",
+      "name": "G1",
+      "request": "launch",
+      "mainClass": "G1",
+      "projectName": "codes_c091a2b7"
+    },
+    {
+      "type": "java",
+      "name": "Awt",
+      "request": "launch",
+      "mainClass": "Awt",
+      "projectName": "codes_c091a2b7"
+    },
+    {
+      "type": "java",
+      "name": "K",
+      "request": "launch",
+      "mainClass": "p2.K",
+      "projectName": "codes_c091a2b7"
+    },
+    {
+      "type": "java",
+      "name": "Q1",
+      "request": "launch",
+      "mainClass": "Q1",
+      "projectName": "codes_c091a2b7"
+    },
+    {
+      "type": "java",
+      "name": "Program",
+      "request": "launch",
+      "mainClass": "Program",
+      "projectName": "codes_c091a2b7"
+    },
+    {
+      "type": "java",
+      "name": "Calculator",
+      "request": "launch",
+      "mainClass": "Calculator",
+      "projectName": "codes_c091a2b7"
+    },
+    {
+      "type": "java",
+      "name": "Calc",
+      "request": "launch",
+      "mainClass": "Calc",
+      "projectName": "codes_c091a2b7"
+    },
+    {
+      "type": "java",
+      "name": "Pattern",
+      "request": "launch",
+      "mainClass": "Pattern",
+      "projectName": "codes_c091a2b7"
+    },
+    {
+      "type": "java",
+      "name": "A",
+      "request": "launch",
+      "mainClass": "A",
+      "projectName": "codes_c091a2b7"
+    },
+    {
+      "type": "java",
+      "name": "B$hello",
+      "request": "launch",
+      "mainClass": "B$hello",
+      "projectName": "codes_c091a2b7"
+    },
+    {
+      "type": "java",
+      "name": "hello",
+      "request": "launch",
+      "mainClass": "hello",
+      "projectName": "codes_c091a2b7"
+    },
+    {
+      "type": "java",
+      "name": "a",
+      "request": "launch",
+      "mainClass": "a",
+      "projectName": "codes_c091a2b7"
+    },
+    {
+      "type": "java",
+      "name": "D",
+      "request": "launch",
+      "mainClass": "D",
+      "projectName": "codes_c091a2b7"
+    },
+    {
+      "name": "C/C++: g++.exe build and debug active file",
+      "type": "cppdbg",
+      "request": "launch",
+      "program": "${fileDirname}\\${fileBasenameNoExtension}.exe",
+      "args": [],
+      "stopAtEntry": false,
+      "cwd": "${fileDirname}",
+      "environment": [],
+      "externalConsole": false,
+      "MIMode": "gdb",
+      "miDebuggerPath": "C:\\msys64\\mingw64\\bin\\gdb.exe",
+      "setupCommands": [
+        {
+          "description": "Enable pretty-printing for gdb",
+          "text": "-enable-pretty-printing",
+          "ignoreFailures": true
+        },
+        {
+          "description": "Set Disassembly Flavor to Intel",
+          "text": "-gdb-set disassembly-flavor intel",
+          "ignoreFailures": true
+        }
+      ],
+      "preLaunchTask": "C/C++: g++.exe build active file"
+    },
+    {
+      "name": "C/C++ Runner: Debug Session",
+      "type": "cppdbg",
+      "request": "launch",
+      "args": [],
+      "stopAtEntry": false,
+      "externalConsole": true,
+      "cwd": "c:/Users/avane/Downloads/codes/C++/dsacppbari",
+      "program": "c:/Users/avane/Downloads/codes/C++/dsacppbari/build/Debug/outDebug",
+      "MIMode": "gdb",
+      "miDebuggerPath": "gdb",
+      "setupCommands": [
+        {
+          "description": "Enable pretty-printing for gdb",
+          "text": "-enable-pretty-printing",
+          "ignoreFailures": true
+        }
+      ]
+    }
+  ]
+}

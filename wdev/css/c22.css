@@ -1,0 +1,53 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+body{
+    font-size: 3rem;
+    font-family: 'Courier New', Courier, monospace;
+    display: flex;
+    min-height: 100vh;
+    justify-content: center;
+}
+
+.square{
+    width: clamp(100px,20vh,250px);
+    height: clamp(100px,20vh,250px);
+    background-color: purple;
+    margin:1.5rem;
+
+    
+
+    
+    
+}
+.square:focus , .square:hover{
+ 
+    animation-name: chill ;
+    animation-duration: 4s;
+    animation-delay: 0.5s;
+    animation-iteration-count: 5; 
+    animation-direction: alternate;
+
+}
+
+@keyframes chill{
+    0%{
+        transform: translateX(0);
+
+    }
+    33%{
+        transform: translateX(500px) rotate(180deg);
+
+    }
+    66%{
+        transform: translateX(-500px) rotate(-180deg);
+    }
+    100%{
+        transform: translateX(0);
+        background-color: rebeccapurple;
+
+    }
+    
+}

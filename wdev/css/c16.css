@@ -1,0 +1,55 @@
+*{
+    padding:0;
+    margin:0;
+    box-sizing: border-box;
+}
+img{
+    display: block;
+}
+body{
+    font-family: 'Courier New', Courier, monospace;
+
+    
+
+}
+
+.h1{
+    font-weight: 200;
+    font-size:12rem;
+    color:hsla(0, 0%, 0%, 0);
+    text-align: center;
+    background-image:url(../images/scenic-2200x1331.png );
+    background-size:auto;
+    text-transform:uppercase;
+
+
+    
+} 
+/* .profile_pic{
+    width:35%;
+    
+}
+.about{
+    position:absolute;
+    left: -1000px;
+} */
+/* .container{
+    display: flex;
+  
+    align-items: center;
+    justify-content: flex-start;
+ 
+
+    
+} */
+/* .profile_pic img{
+    width:100%;
+    height: auto;
+    border-radius: 50%;
+    border: 2px double gray;
+    min-width: 100px;
+
+}
+.nowrap{
+    white-space: nowrap;
+} */

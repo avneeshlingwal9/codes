@@ -1,0 +1,29 @@
+body{
+    font-family: 'Courier New', Courier, monospace;
+
+}
+.columns{
+    columns: 4 250px;
+    column-rule: 3px solid #333;
+    column-rule-style: dashed;
+
+}
+.columns p{
+    margin-top: 0;
+}
+.columns h2{
+    background-color: #333;
+    color: azure;
+    margin-top: 0;
+    break-inside: avoid;
+}
+.columns .quote{
+    column-span: all;
+    font-size: 1.5rem;
+    margin-top: 2rem;
+
+
+}
+.nowrap{
+    white-space:nowrap;
+}

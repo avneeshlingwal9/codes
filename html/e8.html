@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" >
+    <title>Form</title>
+    <meta name="author" content="John Cena" >
+    <link rel="icon" href="smartwatch-app.png" type="image/x-icon" >
+  </head>
+  <body>
+    <form action="https://httpbin.org/get" method="get">
+      <fieldset>
+        <legend>Personal Details</legend>
+        <p>
+          <label for="firstName"> Enter your First Name: </label>
+          <input
+            type="text"
+            name="firstName"
+            id="firstName"
+            required
+            autocomplete="on"
+            placeholder="Ahem"
+          >
+        </p>
+        <p>
+          <label for="lastName"> Enter your last name: </label>
+          <input
+            type="text"
+            name="lastName"
+            id="lastName"
+            required
+            autocomplete="on"
+            placeholder="Kashyap"
+          >
+        </p>
+        <p>
+          <label for="passWord"> Enter your password</label>
+          <input type="password" name="passWord" id="passWord" required >
+        </p>
+
+        <p>
+          <label for="phoneNumber"> Enter your phone number : </label>
+          <input
+            type="tel"
+            name="Phone number"
+            id="phoneNumber"
+            pattern="{0-9}[10]"
+            required
+            placeholder="6969696969"
+          >
+        </p>
+
+      </fieldset>
+      <fieldset>
+        <p>
+          <label for="year" > Select your favorite year: </label>
+          <input type="number" name="Year" min="1900" max = "2024" step="1" id="year">
+  
+        </p>
+        <p> 
+          <label for="drinks"> Choose your favorite drink </label>
+          <select name="Drink" id="drinks" >
+            <option value="coffee"> Coffee </option>
+            <option value="cold drink"> Cold Drink</option>
+            <option value="milkshake">Milk Shake</option>
+            <option value="banana shake"> Banana Shake</option>
+          </select>
+        </p>
+      </fieldset>
+      <fieldset>
+        <button type="submit">Submit</button>
+      </fieldset>
+    </form>
+  </body>
+</html>

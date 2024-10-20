@@ -1,0 +1,41 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-size: 1.5rem;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    display: flex;
+    justify-content:space-between;
+    
+
+    
+    
+}
+header{
+    
+    flex-grow: 1;
+
+    
+    
+}
+li{
+    display: grid; 
+    background-color: papayawhip;
+    place-content: center;
+    border: 1px solid black;
+    margin-top : 3px;
+    padding: 3px;
+    
+    
+
+}
+div::after{
+    place-content: "-";
+    color:whitesmoke;
+}
+div::before{
+    place-content: "-";
+    color: whitesmoke;
+}

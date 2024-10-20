@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" >
+    <title>This is the semantic practice page</title>
+
+    <link rel="icon" href="smartwatch-app.png" type="image/x-icon" >
+    <link rel="stylesheet" href = "main2.css" type="text/css">
+    <meta name="auohr" content="Putin" >
+    <meta name="description" content="This is just for practice" >
+  </head>
+  <body>
+    <header>
+      <h1>This is a page that is for nothing.</h1>
+      <nav>
+        <ol>
+          <li><a href="#Hierarchy">Hierarchy</a></li>
+          <li><a href="#Abbrevations"> Abbrevations</a></li>
+          <li><a href="#Address_tag"> Address Tag </a></li>
+          <li><a href="#Ordered"> Ordered </a></li>
+          <li><a href="#Unordered"> Unordered</a></li>
+          <li><a href="#Descriptive"> Descriptive</a></li>
+          <li><a href="#Mountains"> Moutain</a></li>
+          
+        </ol>
+      </nav>
+    </header>
+    <main>
+      <article id="Hierarchy">
+        <h2>Hierarchy</h2>
+        <p>
+          This is the paragraph of the <br>
+          First paragraph<br>
+          Which shows <br>
+          Use the Hierarchy.
+        </p>
+      </article>
+      <hr>
+      <article id="Abbrevations">
+        <h2>Uses of abbrevations</h2>
+        <p>Shows the <em> Uses of Abbrevations</em></p>
+        <h3>First example</h3>
+        <p>
+          This contains an &nbsp; <strong> ABBREVATIONS</strong> for
+          <abbr title="Send Message">SMS</abbr> .
+        </p>
+        <p>
+          This link is for
+          <a
+            href="https://www.google.com/imgres?q=himalayas&imgurl=https%3A%2F%2Flp-cms-production.imgix.net%2F2021-01%2FGettyRF_450207051.jpg&imgrefurl=https%3A%2F%2Fwww.lonelyplanet.com%2Farticles%2Fplanning-your-dream-himalayan-trip&docid=Q8JuAe3linNLVM&tbnid=mppLfQLXvZ1vrM&vet=12ahUKEwjkk6HTodCFAxV4oGMGHfXyAcsQM3oECBMQAA..i&w=5760&h=3840&hcb=2&ved=2ahUKEwjkk6HTodCFAxV4oGMGHfXyAcsQM3oECBMQAA"
+            >Mountains</a
+          >
+        </p>
+      </article>
+
+      <hr>
+
+      <article id="Address_tag">
+        <h2>Use of address tag</h2>
+        <p>So the <em> address </em> is :</p>
+        <address>N-Flat , 609/6 Govindpuri Delhi</address>
+        <!-- This is the second hehehehehehehehehehehehe-->
+      </article>
+      <hr>
+      <article id="Ordered">
+        <h2>Ordered Lists</h2>
+        <p>Examples:</p>
+        <ol>
+          <li>Mango</li>
+          <li>Apple</li>
+          <li>Orange</li>
+          <li>Litchi</li>
+        </ol>
+      </article>
+      <hr>
+      <article id="Unordered">
+        <h2>Unordered Lists</h2>
+        <ul>
+          <li><p>Anything Random</p></li>
+          <li><p>No order in it</p></li>
+          <li><p>Totally totally random</p></li>
+        </ul>
+      </article>
+      <hr>
+      <article id="Descriptive">
+        <h2>Descriptive lists</h2>
+        <dl>
+          <dt>WWI</dt>
+          <dd>
+            Fought in europe but still known as world war as they had colonized
+            the whole world at that time
+          </dd>
+
+          <dt>WW2</dt>
+          <dd>Fought in all over the world between allied and axis powers</dd>
+        </dl>
+      </article>
+      <hr>
+
+      <article id="Mountains">
+        <h2>Mountains</h2>
+        <figure>
+          <img
+            src="img/img1.jpg"
+            alt="Moutain 1 "
+            title="Himalayas"
+            width="275"
+            height="183"
+            loading="lazy"
+          >
+          <figcaption>Mountains</figcaption>
+        </figure>
+      </article>
+
+      <article>
+        <h2> Semantics </h2>
+        <section>
+          <h3> Aside and details and summary </h3>
+        <aside> 
+          <details>
+            <summary> Waana <mark> KNOW </mark> something </summary>
+            <p> HEHEEHEHEHEHEHe</p>
+          </details>
+        </aside>
+        </section>
+        <section>
+          <h3> Date and time </h3>
+          <p> Showing duration using time <time datetime="PT3H"> 3 hours </time></p>
+          <p> It is <time datetime="05:00"> 5'o clock </time> here  </p>
+        </section>
+
+      </article>
+      <article>
+        <h2> Table for daily schedule  </h2>
+        <table>
+            <caption> DAILY SCHEDULE </caption>
+            <thead>
+                <tr> <th> &nbsp;</th>
+                    <th scope="col"> Time </th>
+                     
+                    <th scope="col"> Task </th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr> 
+                    <th scope="row"> Morning </th>
+                    <td> <time datetime="04:30">04:30 am </time>-<time datetime="09:30"> 09:30 am</time></td>
+                    <td> Chill </td>
+
+                </tr>
+                <tr>
+                    <th scope="row"> Noon  </th>
+                     <td> <time datetime="09:30">09:30 am </time>-<time datetime="12:30"> 12:30 pm</time></td>
+                    <td> Sleep </td>
+
+                </tr>
+                <tr>
+                    <th scope ="row"> Evening </th>
+                     <td> <time datetime="12:30">12:30 pm </time>-<time datetime="04:30"> 04:30 pm</time></td>
+                    <td> Study </td>
+                </tr>
+                <tr>
+                    <th scope = "row"> Night</th>
+                     <td rowspan="2"> Free Time </td>
+                    <td> Eat </td>
+
+                </tr>
+                <tr>
+                    <th scope="row"> Others</th>
+                    <td> Sleep</td>
+                </tr>
+            </tbody>
+            <tfoot>
+                <tr>
+                    <td colspan="3"> This is what i do all day </td>
+                </tr>
+            </tfoot>
+        </table>
+
+      </article>
+    </main>
+    <footer>
+      <h2>CopyRight</h2>
+      <p>&lt;&lt;&lt; &copy;<a href="about.html"> John Cena</a> &gt;&gt;&gt;</p>
+
+      <a href="#"> Back to top </a>
+    </footer>
+  </body>
+</html>

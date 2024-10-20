@@ -1,0 +1,77 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+html{
+    scroll-behavior: smooth;
+}
+img{
+    display: block;
+    width:100%;
+    height: auto;
+}
+body{
+    font-size: 1.5rem;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: aquamarine;
+    background-image: radial-gradient(blue , aquamarine);
+    display: flex;
+    flex-direction: column;
+    
+
+
+}
+ main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-grow: 1;
+    
+
+}
+header , footer {
+    background-color: darkblue;
+    color:wheat;
+    position: sticky;
+    text-align: center;
+
+
+}
+header{
+    top:0;
+}
+footer{
+    bottom: 0;
+}
+nav a , nav a:visited{
+    text-decoration: none;
+    color: whitesmoke;
+
+}
+nav a:focus , nav a:hover{
+    color:black;
+    background-color: aliceblue;
+}
+.card{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 2px solid black;
+    margin:0.5rem;
+    width: min(100%,350px);
+}
+.card figure img{
+    padding: .5rem;
+    border: 2px double gray;
+    border-radius: 50%;
+    margin-top: 8rem;
+}
+.card figcaption{
+    font-size: 3rem;
+}
+@media screen  and (min-width : 576px){
+    
+    
+}
+

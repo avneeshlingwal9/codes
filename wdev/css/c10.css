@@ -1,0 +1,27 @@
+*{
+    padding:0;
+    margin:0;
+
+}
+ul{
+    background-color: black;
+    padding: 1rem;
+    list-style: none;
+    text-align: right;
+    
+
+}
+li{
+
+    display: inline-block;
+    margin-inline: 20px;
+
+}
+li a{
+    color:aliceblue;
+    text-decoration: none;
+
+}
+li a:hover , li a:focus{
+    text-decoration: underline;
+}

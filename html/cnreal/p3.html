@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head> 
+        <meta charset="UTF-8" >
+        <title > Question 3 </title>
+        <meta name="author" content="description" >
+        <meta name="description" content="This contains question 3">
+        
+    </head>
+    <body>
+        <form >
+            <fieldset>
+                <legend>Customer Details</legend>
+                <p>
+                    <label for="name"> Enter your good name: </label>
+                    <input type="text" name="Cname" id="name" placeholder="John Doe" required>
+
+                </p>
+                <p>
+                    <label for="phnum"> Enter your phone number : </label>
+                    <input type="tel" name="contact" id="phnum" pattern="[0-9]{10}" required placeholder="9458765465">
+
+                </p>
+                <p> Select your preferred days of shopping: </p>
+                <input type="checkbox" name="days" id="monday">
+                <label for="monday">Monday </label>
+                <br>
+                <input type="checkbox" name="days" id="tuesday">
+                <label for="tuesday">Tuesday </label>
+                <br>
+
+                <input type="checkbox" name="days" id="wednesday">
+                <label for="wednesday">Wednesday </label>
+                <br>
+                <input type="checkbox" name="days" id="thursday">
+                <label for="thursday">Thursday </label>
+                <br>
+                <input type="checkbox" name="days" id="friday">
+                <label for="friday">Friday </label>
+                <br>
+
+                <input type="checkbox" name="days" id="saturday">
+                <label for="saturday">Saturday </label>
+                <br>
+                <input type="checkbox" name="days" id="sunday">
+                <label for="sunday">Sunday</label>
+                <br>
+
+                <p>
+                    Select your favorite item:
+                </p>
+                <input type="radio" name="item" id="grocery">
+                <label for="grocery"> Grocery</label>
+                <input type="radio" name="item" id="stationary">
+                <label for="stationary"> Stationary</label>
+                <input type="radio" name="item" id="books">
+                <label for="books"> Books</label>
+                <input type="radio" name="item" id="clothes">
+                <label for="clothes"> Clothes</label>
+                <input type="radio" name="item" id="home_essentials">
+                <label for="home_essentials"> Home essentials</label>
+                <input type="radio" name="item" id="otheritems">
+                <label for="otheritems"> Other Items</label>
+            </fieldset>
+            <fieldset>
+                <legend> Contact Us </legend>
+
+                <label for="suggestion"> Please enter your suggestions: </label>
+                <br>
+                <textarea name="suggestion" id = "suggestion" placeholder="Enter text" cols="30" rows="10"></textarea>
+                <br>
+                
+
+
+
+
+
+            </fieldset>
+            <button type="submit"> Submit</button>
+                <button type="reset">Reset</button>
+        </form>
+    </body>
+    
+
+</html>

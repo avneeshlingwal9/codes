@@ -1,0 +1,72 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+body{
+    font: 1.5rem sans-serif;
+    min-height: 100vh;
+
+    display: flex;
+    flex-direction: column;
+    color:rgba(0, 204, 255, 0.788);
+    background-image: radial-gradient(whitesmoke,rgba(0, 204, 255, 0.788));
+
+}
+header,footer , main,nav{
+    display: grid;
+    grid-template-columns: 100%;
+    place-content: center;
+    text-align: center;
+}
+header , footer {
+    color:wheat;
+    background-color: darkblue;
+    position: sticky; 
+
+}
+header{
+    top:0;
+}
+footer{
+    bottom:0;
+}
+main{
+    flex-grow: 1;
+}
+
+/* SMALL SCREENS */
+@media screen and (min-width :576px){
+    body{
+        background-color: aquamarine;
+        background-image: radial-gradient(whitesmoke , aquamarine);
+    }
+}
+/* Medium Sized Screens */
+@media screen and (min-width :768px){
+    body{
+        background-color: gold;
+        background-image: radial-gradient(whitesmoke ,gold);
+    }
+}
+/*Large Sized Screen */
+@media screen and (min-width :992px){
+    body{
+        background-color: blueviolet;
+        background-image: radial-gradient(whitesmoke , blueviolet);
+    }
+}
+/*More large Sized Screen */
+@media screen and (min-width :1200px){
+    body{
+        background-color: peru;
+        background-image: radial-gradient(whitesmoke , peru);
+    }
+}
+/* Extra Large Sized Screen */
+@media screen and (min-width :1400px){
+    body{
+        background-color: red;
+        background-image: radial-gradient(whitesmoke , red);
+    }
+}

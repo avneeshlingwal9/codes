@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title> Question 1  </title>
+        <meta name="author" content="Avneesh">
+        <meta name="description" content="Form of personal details">
+
+        
+    </head>
+    <body>
+        <h1> FORM</h1>
+        <form>
+            <fieldset>
+                <legend>Personal Details </legend> 
+                <p>
+                    <label for="name"> Enter your name: </label>
+                    <input type="text" name="Name" id="name" required placeholder="john cena" >
+                </p>
+                <p>
+                    <label for="dob" >Enter your date of birth:  </label>
+                    <input type="date" name="DOB" id="dob" required >
+                </p>
+                <p>
+                    <label for="email"> Enter your email address: </label>
+                    <input type="email" name="Email address" id="email" required placeholder="someone@gmail.com">
+                </p>
+                <p> 
+                    <label for="password"> Enter your password: </label>
+                    <input type="password" name="Password" id="password" required placeholder="password">
+                </p>
+            <!-- Radio Button-->
+                    <p> Select your gender : </p>
+                    <input type="radio" name="gender" id="male" value="male"  required>
+                    <label for="male"> Male</label>
+                    <input type="radio" name="gender" id="female" value="female">
+                    <label for="female"> Female</label>
+                    <input type="radio" name="gender" id="others" value="others">
+                    <label for="others"> Others</label>
+                
+                                 <!-- Checkbox -->
+
+                    <p>
+                    Select the languages you know: 
+                    </p>
+                    <input type="checkbox" name="languages" id="hindi" value="hindi">
+                    <label for="hindi"> Hindi</label>
+                    <br>
+                    <input type="checkbox" name="languages" id="english" value="english">
+                    <label for="english">English</label>
+                    <br>
+                    <input type="checkbox" name="languages" id="urdu" value="urdu">
+                    <label for="urdu"> Urdu</label>
+                    <br>
+                    <input type="checkbox" name="languages" id="german" value="german">
+                    <label for="german">German</label>
+                    <br>
+                    <input type="checkbox" name="languages" id="french" value="french">
+                    <label for="french"> French</label>
+                    <br>
+                    <input type="checkbox" name="languages" id="bengali" value="bengali">
+                    <label for="bengali">Bengali</label>
+                    <br>
+                    <input type="checkbox" name="languages" id="Tamil" value="Tamil">
+                    <label for="Tamil"> Tamil</label>
+                    <br>
+                    <input type="checkbox" name="languages" id="telegu" value="telegu">
+                    <label for="telegu">Telegu</label>
+                    
+                    <br>
+                    <input type="checkbox" name="languages" id="otherlangs" value="otherlangs">
+                    <label for="otherlangs">Others</label>
+
+                 <!-- Dropdown or spinner -->
+                    <p> Select your education: 
+                    
+                    <select name="education" id="education" >
+                        <option value="&nbsp;" disabled selected></option>
+                        
+                        <option id="highschool"> High School </option> 
+                        <option id="intermediate"> Intermediate</option>
+                        <option id="graduation"> Graduation </option>
+                        <option id="otheredu"> Others</option>
+
+                    </select>
+                    </p>
+                    <p>
+                        
+                        <label for="year"> Select your passing year: </label>
+                        <input type="number" name="Passing year" id="year" min="1900" max="2024" step="1" value="2019">
+                    </p>
+
+                    <p>
+                        <button type="submit"> Submit</button>
+                    </p>
+
+                    
+                
+
+            </fieldset>
+            
+        </form>
+
+    </body>
+
+
+
+
+</html>

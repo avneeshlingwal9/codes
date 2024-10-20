@@ -1,0 +1,21 @@
+body{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    
+}
+a{
+    text-decoration: none;
+    color: blue;
+    cursor:crosshair;
+    
+}
+a:visited{
+    color:purple;
+}
+a:hover, a:focus{
+    color:aqua;
+}
+a:active{
+    color: coral;
+}
+
+

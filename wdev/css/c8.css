@@ -1,0 +1,20 @@
+body{
+    font-family: cursive;
+}
+ol{
+    list-style-type:lower-greek;
+}
+ul{
+    list-style-type: square;
+    list-style-image: url(/wdev/images/checkmark.png);
+    list-style-position: inside;
+    text-align: center;
+    
+}
+ul :nth-child(odd){
+    color:red;
+}
+::marker{
+    color:aqua;
+    content: "5 ";
+}

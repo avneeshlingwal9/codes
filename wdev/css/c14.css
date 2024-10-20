@@ -1,0 +1,36 @@
+*{
+margin:0;
+padding:0;
+box-sizing: border-box;
+}
+body{
+    font-size: 2rem;
+    font-family: 'Courier New', Courier, monospace;
+}
+.container{
+    min-width: 800px;
+    min-height: 400px;
+    display: flex;
+    border: 2px solid black;
+    flex-direction: row;
+    gap: 1px;
+    justify-content: center;
+    align-items: center;
+    
+
+}
+.box{
+    background-color: black;
+    color:white;
+    height:50px;
+    width: 50px;
+    display: flex;
+    
+
+    
+
+}
+.box :nth-child(2){
+    flex: 2 2 100px; 
+    order:-1;
+}
