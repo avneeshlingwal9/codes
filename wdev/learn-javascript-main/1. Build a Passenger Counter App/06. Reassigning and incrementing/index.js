@@ -8,3 +8,8 @@ console.log(count)
 // Decrease it down to 25, and then finally increase it to 70
 
 
+let bonusPoints = 50;
+bonusPoints *= 2;
+bonusPoints -= 75;
+bonusPoints += 45;
+console.log(bonusPoints);
