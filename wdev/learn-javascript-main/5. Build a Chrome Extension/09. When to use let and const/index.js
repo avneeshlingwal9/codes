@@ -3,7 +3,7 @@
 // Which variables below should be changed from let to const?
 
 // The customer wants to order some stuff. Here are the details:
-let basePrice = 520
+const basePrice = 520
 let discount = 120
 let shippingCost = 12
 let shippingTime = "5-12 days"

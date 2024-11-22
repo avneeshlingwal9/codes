@@ -8,6 +8,9 @@ inputBtn.addEventListener("click", function() {
     inputEl.value = ""
     // Save the myLeads array to localStorage 
     // PS: remember JSON.stringify()
+    let topush = JSON.stringify(myLeads)
+    localStorage.setItem("myLeads", topush)
+
     renderLeads()
     
     // To verify that it works:

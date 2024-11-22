@@ -1,50 +1,61 @@
 #include <iostream>
 #include <queue>
-using namespace std ;
-struct Process{
-    int timeslice;
-    string pid ;
-    int arrivaltime ; 
+#include <vector>
+#include <algorithm>
+using namespace std;
+class Process{
+    public:
+        string pid;
+        int arrivalTime;
+        int burstTime;
+        int waitingTime;
+        int turnaroundTime;
+    Process(string apid, int aarrivalTime, int aburstTime){
+        pid = apid;
+        arrivalTime = aarrivalTime;
+        burstTime = aburstTime;
+        waitingTime = 0;
+        turnaroundTime = 0;
+    }
 };
-void processInsertion(queue<Process>&q1 ){
-    int n ;
-    cout <<"Enter the processes you want to run : " << endl; 
-    cin >> n ;
-    cout <<"Enter the process id and respective time slices for your process " << endl; 
-    for(int i =0 ; i < n ; i++){
-        Process p ;
-        cin >> p.pid;
-        cin >> p.timeslice;
-        p.arrivaltime = i ;      
-        q1.push(p); 
+void display(vector<Process> &process , double avgTAT , double avgWT){
+    cout << "ProcessID " << "ArrivalTime " << "BurstTime " << "WaitingTime " << "TurnaroundTime " << endl;
+    for(auto i : process){
+        cout << "\t" <<i.pid << "\t" << i.arrivalTime << "\t" << i.burstTime << "\t\t" << i.waitingTime << "\t" << i.turnaroundTime << endl;
 
     }
+    cout << "Average Turnaround time: " << avgTAT << endl;
+    cout << "Average Waiting Time: " << avgWT << endl; 
 }
-void display(queue<Process> q){
-    queue<Process> q1 = q ;
-    while(!q1.empty()){
-        cout << q1.front().pid <<  " " << q1.front().timeslice << " " << q1.front().arrivaltime <<  endl;
-        q1.pop();
+
+void calculateFCFS(vector<Process> &process ){
+    sort(process.begin(), process.end(), [](const Process &a, const Process &b)
+         { return a.arrivalTime < b.arrivalTime; });
+
+    double avgWaitingTime = 0;
+    int currentCycle = process[0].arrivalTime;
+    double avgTurnaroundTime = 0;
+    for (auto &i : process){
+        i.waitingTime = currentCycle- i.arrivalTime;
+        avgWaitingTime += (double)i.waitingTime;
+        currentCycle += i.burstTime;
+        i.turnaroundTime = currentCycle - i.arrivalTime;
+        avgTurnaroundTime += (double)i.turnaroundTime;
+
     }
+    avgTurnaroundTime = avgTurnaroundTime / process.size();
+    avgWaitingTime = avgWaitingTime / process.size();
+    display(process, avgTurnaroundTime, avgWaitingTime);
 }
-void fcfs(queue<Process>&q){
-    double avgtime = 0 ;
-    int start = 0 ;
-    while(!q.empty()){
-        Process curr = q.front();
-        avgtime+=curr.timeslice;
-        cout << curr.pid << " is running from " << start << " -> " << curr.timeslice+start   << endl;
-        start+=curr.timeslice;
 
 
-
-    }
-}
 int main(){
-queue<Process> q1 ;
-processInsertion(q1);
-display(q1);
-
-
-
+    Process p1("P1", 0, 8);
+    Process p2("P2", 1, 4);
+    Process p3("P3", 2, 9);
+    Process p4("P4", 3, 5);
+    vector<Process> process = {p1, p2, p3, p4};
+    
+    calculateFCFS(process);
+    
 }

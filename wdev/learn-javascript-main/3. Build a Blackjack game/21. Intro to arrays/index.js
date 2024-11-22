@@ -8,4 +8,9 @@ let featuredPosts = [
 
 // Create an array that lists your i.e. experience, education, licenses, skills or similar
 // The items of the array should be strings
-
+let arr = ["Hell", "Satan", "Rake", "Couquette", "Charmer"]
+let i = 0
+while (i < 5) {
+  console.log(arr[i])
+  i++
+}

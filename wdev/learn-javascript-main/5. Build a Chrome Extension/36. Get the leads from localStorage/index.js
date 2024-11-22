@@ -6,16 +6,19 @@ const ulEl = document.getElementById("ul-el")
 // Get the leads from the localStorage
 // Store it in a variable, leadsFromLocalStorage
 // Log out the variable
+let leadsFromLocalStorage = []
+inputBtn.addEventListener("click", function () {
+  myLeads.push(inputEl.value)
+  inputEl.value = ""
+  localStorage.setItem("myLeads", JSON.stringify(myLeads))
+  renderLeads()
 
-inputBtn.addEventListener("click", function() {
-    myLeads.push(inputEl.value)
-    inputEl.value = ""
-    localStorage.setItem("myLeads", JSON.stringify(myLeads) )
-    renderLeads()
-    
-    // To verify that it works:
-    console.log( localStorage.getItem("myLeads") )
+  // To verify that it works:
+  leadsFromLocalStorage = JSON.parse(localStorage.getItem("myLeads"))
+  console.log(leadsFromLocalStorage)
 })
+
+
 
 function renderLeads() {
     let listItems = ""

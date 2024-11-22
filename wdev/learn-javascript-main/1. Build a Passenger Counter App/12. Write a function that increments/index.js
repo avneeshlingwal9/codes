@@ -8,6 +8,8 @@ function increments() {
   lapsCompleted++;
 }
 increments();
+console.log(lapsCompleted);
 increments();
+console.log(lapsCompleted);
 increments();
 console.log(lapsCompleted)
