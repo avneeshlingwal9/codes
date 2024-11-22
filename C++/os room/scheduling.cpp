@@ -10,13 +10,20 @@ class Process{
         int burstTime;
         int waitingTime;
         int turnaroundTime;
-    Process(string apid, int aarrivalTime, int aburstTime){
-        pid = apid;
-        arrivalTime = aarrivalTime;
-        burstTime = aburstTime;
-        waitingTime = 0;
-        turnaroundTime = 0;
+        int lastTime;
+        int completionTime;
+        int timeRequired;
+        Process(string apid, int aarrivalTime, int aburstTime)
+        {
+            pid = apid;
+            arrivalTime = aarrivalTime;
+            burstTime = aburstTime;
+            waitingTime = 0;
+            turnaroundTime = 0;
+            lastTime = aarrivalTime;
+            timeRequired = aburstTime;
     }
+
 };
 void display(vector<Process> &process , double avgTAT , double avgWT){
     cout << "ProcessID " << "ArrivalTime " << "BurstTime " << "WaitingTime " << "TurnaroundTime " << endl;
@@ -26,6 +33,60 @@ void display(vector<Process> &process , double avgTAT , double avgWT){
     }
     cout << "Average Turnaround time: " << avgTAT << endl;
     cout << "Average Waiting Time: " << avgWT << endl; 
+}
+void checkAnyNewProcesses(vector<Process> &process, int &currIndex ,  int currentCycle, queue<int> &processQueue )
+{
+    if(currIndex == process.size()){
+        return;
+    }
+    else{
+        while(currIndex < process.size() && process[currIndex].arrivalTime <= currentCycle  ){
+            processQueue.push(currIndex);
+            currIndex++;
+        }
+
+    }
+    
+}
+void calculateRR(vector<Process> &process , int timeSlice ){
+    sort(process.begin(), process.end(), [](const Process &a, const Process &b)
+         { return a.arrivalTime < b.arrivalTime; });
+
+    double avgWaitingTime = 0;
+    int currentCycle = process[0].arrivalTime;
+    double avgTurnaroundTime = 0;
+    int quantum = timeSlice;
+    queue<int> processQueue;
+    processQueue.push(0);
+    int currIndex = 1;
+    while(!processQueue.empty()){
+        int index = processQueue.front();
+        Process &curr = process[index];
+        processQueue.pop();
+        curr.waitingTime += currentCycle - curr.lastTime;
+
+        while(quantum > 0 && curr.timeRequired > 0){
+            curr.timeRequired--;
+            quantum--;
+            currentCycle++;
+            checkAnyNewProcesses(process, currIndex, currentCycle, processQueue);
+        }
+        if(curr.timeRequired == 0){
+            curr.turnaroundTime = currentCycle - curr.arrivalTime;
+            avgTurnaroundTime += curr.turnaroundTime;
+            avgWaitingTime += (double)curr.waitingTime;
+
+        }
+        else{
+            curr.lastTime = currentCycle;
+            processQueue.push(index);
+        }
+        quantum = timeSlice;
+    }
+
+    avgTurnaroundTime = avgTurnaroundTime / process.size();
+    avgWaitingTime = avgWaitingTime / process.size();
+    display(process, avgTurnaroundTime, avgWaitingTime);
 }
 
 void calculateFCFS(vector<Process> &process ){
@@ -56,6 +117,6 @@ int main(){
     Process p4("P4", 3, 5);
     vector<Process> process = {p1, p2, p3, p4};
     
-    calculateFCFS(process);
+    calculateRR(process,2);
     
 }
