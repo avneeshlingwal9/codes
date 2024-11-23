@@ -2,6 +2,7 @@
 #include <queue>
 #include <vector>
 #include <algorithm>
+#include <unordered_map>
 using namespace std;
 class Process{
     public:
@@ -13,6 +14,8 @@ class Process{
         int lastTime;
         int completionTime;
         int timeRequired;
+/*         Process() : pid(0), arrivalTime(0), burstTime(0), waitingTime(0), turnaroundTime(0), lastTime(0), timeRequired(0) {}; */
+
         Process(string apid, int aarrivalTime, int aburstTime)
         {
             pid = apid;
@@ -22,6 +25,12 @@ class Process{
             turnaroundTime = 0;
             lastTime = aarrivalTime;
             timeRequired = aburstTime;
+    }
+
+};
+struct compareByBurstTime{
+    bool operator()(const Process &p1, const Process &p2) const{
+        return p1.timeRequired > p2.timeRequired;
     }
 
 };
@@ -47,6 +56,68 @@ void checkAnyNewProcesses(vector<Process> &process, int &currIndex ,  int curren
 
     }
     
+}
+void checkShortProcess(vector<Process> &process , int &currIndex , Process &curr ,  int currentCycle,  priority_queue<Process, vector<Process>, compareByBurstTime> &processQueue ){
+    
+    if(currIndex == process.size()){
+        return;
+    }
+    else{
+        while(currIndex < process.size() && process[currIndex].arrivalTime <= currentCycle){
+            processQueue.push(process[currIndex]);
+            currIndex++;
+        }
+    }
+}
+void calculateSJF(vector<Process> &process ){
+    sort(process.begin(), process.end(), [](const Process &a, const Process &b)
+         { return a.arrivalTime < b.arrivalTime; });
+    double avgWaitingTime = 0;
+    int currentCycle = process[0].arrivalTime;
+    double avgTurnaroundTime = 0;
+    priority_queue<Process, vector<Process>, compareByBurstTime> processQueue;
+    processQueue.push(process[0]);
+    int currIndex = 1; 
+    while(!processQueue.empty()){
+        Process curr = processQueue.top();
+        processQueue.pop();
+        while(curr.timeRequired > 0){
+            curr.timeRequired--;
+            currentCycle++;
+            checkShortProcess(process, currIndex, curr,currentCycle ,processQueue);
+            if(!processQueue.empty() && processQueue.top().timeRequired < curr.timeRequired){
+                break;
+            }
+            
+
+        }
+
+        if(curr.timeRequired == 0){
+            
+            curr.turnaroundTime = currentCycle - curr.arrivalTime;
+            curr.waitingTime += curr.turnaroundTime - curr.burstTime;
+            
+
+            avgTurnaroundTime += curr.turnaroundTime;
+            avgWaitingTime += (double)curr.waitingTime;
+        }
+        else{
+            
+            curr.waitingTime += currentCycle - curr.lastTime;
+            curr.lastTime = currentCycle;
+            processQueue.push(curr);
+        }
+        for (int i = 0; i < process.size(); i++){
+            if(process[i].pid == curr.pid){
+                process[i] = curr;
+                break;
+            }
+        }
+    }
+
+    avgTurnaroundTime = avgTurnaroundTime / process.size();
+    avgWaitingTime = avgWaitingTime / process.size();
+    display(process, avgTurnaroundTime, avgWaitingTime);
 }
 void calculateRR(vector<Process> &process , int timeSlice ){
     sort(process.begin(), process.end(), [](const Process &a, const Process &b)
@@ -116,7 +187,6 @@ int main(){
     Process p3("P3", 2, 9);
     Process p4("P4", 3, 5);
     vector<Process> process = {p1, p2, p3, p4};
-    
-    calculateRR(process,2);
-    
+
+    calculateSJF(process);
 }
