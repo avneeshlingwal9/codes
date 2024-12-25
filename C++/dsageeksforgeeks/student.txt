@@ -1,0 +1,10 @@
+301 Ethan 33
+302 Sophia 95 
+303 James 72 
+304 Isabella 89
+305 Lucas 47
+306 Mia 78
+307 William 65
+308 Charlotte 88  
+309 Benjamin 92 
+310 Amelia 54
