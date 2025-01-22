@@ -19,11 +19,14 @@ class Process{
         burstTime = btime;
         arrivalTime = atime;
     }
-  
-   friend ostream& operator<<(ostream& os , Process& p){
-       os << "Process Id " << p.pid << " Burst Time " << p.burstTime << " Arrival Time " << p.arrivalTime;
-       return os;
+    // Overloaded the output stream
+
+    friend ostream &operator<<(ostream &os, Process &p)
+    {
+        os << "Process Id " << p.pid << " Burst Time " << p.burstTime << " Arrival Time " << p.arrivalTime;
+        return os;
    }
+   // Overloaded the operator
    bool operator<(const Process& p1 ) const{
        return burstTime > p1.burstTime;
    }
@@ -75,6 +78,7 @@ class FCFS : public Scheduling{
 class SJF : public Scheduling {
 public:
     map<Process,int> mp;
+    // As the operator < is overloaded, so map can sort them.
     vector<vector<int>> ans;
     int waitingTime = 0, tat = 0;
     int totalWaitingTime = 0;
