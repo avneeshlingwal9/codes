@@ -181,7 +181,7 @@ void generate_graph(vector<vector<vector<int>>> collection)
 
     vector<int> size;
 
-    for (auto matrix : matrixion)
+    for (auto matrix : collection)
     {
         int min_comparison = INT_MAX;
 
@@ -290,24 +290,14 @@ void generate_comparisons(vector<int> &arr)
 int main()
 {
     srand(time(0));
+    vector<int> arr(5);
 
-    vector<vector<vector<int>>> collection;
+    // Filling the array with randomly generated values.
 
-    for (int i = 10; i <= 1000; i += 10)
-    {
-        vector<vector<int>> matrix;
+    fill(arr, 5);
 
-        for (int j = 0; j < 10; j++)
-        {
-            vector<int> row(i);
-            fill(row, i);
-            matrix.push_back(row);
-        }
-        collection.push_back(matrix);
-    }
+    // Generate comparisons
 
-    generate_graph(collection);
-    vector<int> arr(4);
-    fill(arr, 4);
     generate_comparisons(arr);
 }
++
