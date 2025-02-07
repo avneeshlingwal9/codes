@@ -289,7 +289,37 @@ void generate_comparisons(vector<int> &arr)
 }
 int main()
 {
-    srand(time(0));
+
+    For generating graph.srand(time(0));
+
+    // Initializing a 3-D vector.
+
+    vector<vector<vector<int>>> collection;
+
+    for (int i = 10; i <= 1000; i += 10)
+    {
+        // Filling each Matrix with 10 Rows or Vectors of size (i), with randomly generated data.
+
+        vector<vector<int>> matrix;
+
+        for (int j = 0; j < 10; j++)
+        {
+            vector<int> row(i);
+
+            fill(row, i);
+
+            matrix.push_back(row);
+        }
+
+        collection.push_back(matrix);
+    }
+
+    // Calling generating_graph function
+
+    generate_graph(collection);
+
+    // For finding comparisons in the different permutations of the same sorted array.
+
     vector<int> arr(5);
 
     // Filling the array with randomly generated values.

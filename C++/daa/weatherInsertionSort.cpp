@@ -66,21 +66,6 @@ void print(vector<weatherData> &arr)
         cout << i.cityName << " " << i.time << " " << i.temperature << endl;
     }
 }
-void insertionSortTime(vector<weatherData> &arr)
-{
-
-    for (int i = 1; i < arr.size(); i++)
-    {
-        weatherData key = arr[i];
-        int j = i - 1;
-        while (j >= 0 && arr[j].time > key.time)
-        {
-            arr[j + 1] = arr[j];
-            j--;
-        }
-        arr[j + 1] = key;
-    }
-}
 
 int main()
 {
@@ -101,7 +86,6 @@ int main()
         ss >> data.temperature;
         weatherInfo.push_back(data);
     }
-    insertionSortTime(weatherInfo);
     cout << "\n\nBefore sorting\n\n"
          << endl;
     print(weatherInfo);
