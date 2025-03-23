@@ -1,17 +1,18 @@
 import socket
 
 
-
-port = 1812
+arp_cache ={}
+port = 12546
 
 while True:
     with socket.socket(socket.AF_INET , socket.SOCK_STREAM) as s : 
         s.connect(('localhost' , port))
-        toask = input("Enter the ip address: ")
-        s.sendall(toask.encode())
+        ip = input("Enter the ip address: ")
+        s.sendall(ip.encode())
         mac = s.recv(1024).decode()
-        print(f"MAC address is {mac}")
-
+        if(mac != 'Not found'):
+            arp_cache[ip] = mac
+        print(f"The MAC address is {mac}")
 
     
 
