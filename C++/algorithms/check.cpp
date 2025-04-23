@@ -203,10 +203,14 @@ long long subarrayMax(vector<int> &nums)
     }
     return ans;
 }
+struct pa
+{
+    int l;
+    int k;
+};
 
 int main()
 
 {
-    vector<int> nums{4, -2, -3, 4, 1};
-    subarrayMax(nums);
+    map<pa, bool> m;
 }

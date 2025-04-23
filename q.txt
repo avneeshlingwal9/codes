@@ -1,0 +1,338 @@
+ 		2Sum Problem
+        Accounts merge
+        Add 1 to a number represented by LL
+        Add 2 numbers in LL
+        Aggressive Cows
+        Alien dictionary
+        All Divisors of a Number
+        Armstrong Numbers
+        Articulation Point
+        Assign Cookies
+        Assign Cookies
+        Asteroid Collision
+        BFS
+        Bellman Ford Algorithm
+        Binary Search to find X in sorted array
+        Binary Tree Representation in C++
+        Binary Tree Representation in Java
+        Binary Tree Traversals in Binary Tree
+        Binary subarray with sum
+        Bipartite Graph
+        Book Allocation Problem
+        Bottom View of Binary Tree
+        Boundary Traversal of Binary Tree
+        Bridges in Graph
+        Bubble Sort
+        C++ STL
+        Candy
+        Capacity to Ship Packages within D Days
+        Ceil in a Binary Search Tree
+        Cheapest flights within k stops
+        Check Palindrome
+        Check for Children Sum Property
+        Check for Prime
+        Check for balanced paranthesis
+        Check if LL is palindrome or not
+        Check if a string is palindrome or not
+        Check if a tree is a BST or BT
+        Check if the array is sorted
+        Check if there exists a subsequence with sum K
+        Check if two strings are anagram of each other
+        Check if two trees are identical or not
+        Climbing Stars
+        Clone a Linked List with random and next pointer
+        Combination Sum
+        Connected Components | Logic Explanation
+        Construct Binary Tree from inorder and preorder
+        Construct a BST from a preorder traversal
+        Construct the Binary Tree from Postorder and Inorder Traversal
+        Convert Infix To Prefix Notation
+        Convert min Heap to max Heap
+        Count Digits
+        Count Inversions
+        Count all subsequences with sum K
+        Count and say
+        Count number of bits to be flipped to convert A to B
+        Count number of nice subarrays
+        Count number of subarrays with given xor K
+        Count occurrences of a number in a sorted array with duplicates
+        Count subarrays with given sum
+        Count total Nodes in a COMPLETE Binary Tree
+        Counting frequencies of array elements
+        Cycle Detection in Directed Graph
+        Cycle Detection in Directed Graph
+        Cycle Detection in undirected Graph
+        Cycle Detection in unirected Graph
+        DFS
+        Data Types
+        Delete a Node in Binary Search Tree
+        Delete a node in DLL
+        Delete all occurrences of a key in DLL
+        Delete the middle node of LL
+        Deleting a node in LinkedList
+        Detect a loop in LL
+        Diameter of Binary Tree
+        Disjoint Set [Union by Rank]
+        Disjoint Set [Union by Size]
+        Divide two integers without using multiplication, division and mod operator
+        Djisktra's Algorithm
+        Dynamic Programming Introduction
+        Factorial of N numbers
+        Fibonacci Number
+        Find Peak Element (2D Matrix)
+        Find Prime Factorisation of a Number using Sieve
+        Find eventual safe states
+        Find minimum in Rotated Sorted Array
+        Find missing number in an array
+        Find out how many times has an array been rotated
+        Find peak element
+        Find square root of a number in log n
+        Find the Nth root of a number using binary search
+        Find the Union
+        Find the city with the smallest number of neighbors in a threshold distance
+        Find the first or last occurrence of a given number in a sorted array
+        Find the highest  frequency element
+        Find the intersection point of Y LL
+        Find the length of the linkedlist [learn traversal]
+        Find the number that appears odd number of times
+        Find the number that appears once, and other numbers twice.
+        Find the repeating and missing number
+        Find the row with maximum number of 1's
+        Find the smallest Divisor
+        Find the starting point in LL
+        Find the two numbers appearing odd number of times
+        Find xor of numbers from L to R
+        Flatten Binary Tree to LinkedList
+        Flattening of LL
+        FloCil in Sorted Array
+        Flood fill
+        Floor in a Binary Search Tree
+        Floyd Warshal Algorithm
+        For loops
+        Fractional Knapsack Problem
+        Fruit Into Baskets
+        Functions (Pass by Reference and Value)
+        GCD Or HCF
+        Generate Paranthesis
+        Graph Representation | C++
+        Graph and Types
+        Greedy algorithm to find minimum number of coins
+        Grid Unique Paths 2 
+        Grid Unique Paths : 
+        Hashing Theory
+        Height of a Binary Tree
+        House Robber 
+        If Else statements
+        Implement Lower Bound
+        Implement Min Stack
+        Implement Queue using Arrays
+        Implement Queue using Stack
+        Implement Stack using Arrays
+        Implement Stack using Queue
+        Implement TRIE | INSERT | SEARCH | STARTSWITH
+        Implement Upper Bound
+        Implement queue using Linkedlist
+        Implement stack using Linkedlist
+        Infix to Postfix Conversion using Stack
+        Inorder SuccessPedecessor in BST
+        Inorder Traversal of Binary Tree
+        Insert Interval
+        Insert a given Node in Binary Search Tree
+        Insert a node in DLL
+        Inserting a node in LinkedList
+        Insertion Sort
+        Introduction to Binary Search Tree
+        Introduction to DLL, learn about struct, and how is node represented
+        Introduction to LinkedList, learn about struct, and how is node represented
+        Introduction to Trees
+        Isomorphic String
+        Iterative Inorder Traversal of Binary Tree
+        Iterative Preorder Traversal of Binary Tree
+        Job sequencing Problem
+        Jump Game
+        Jump Game 2
+        KMP alg PS(pi) array
+        Kadane's Algorithm, maximum subarray sum
+        Kahn's Algorithm
+        Koko Eating Bananas
+        Kosaraju's Algorithm
+        Kruskal's Algorithm
+        Kth Missing Positive Number
+        Kth element of 2 sorted arrays
+        Kth largest element in a stream of running integers
+        Kth largest element in an array [use priority queue]
+        Kth smallest element in an array [use priority queue]
+        LCA in Binary Search Tree
+        LCA in Binary Tree
+        LFU cache
+        LRU cache (IMPORTANT)
+        Largest BST in Binary Tree
+        Largest Element in an Array
+        Largest Subarray with 0 Sum
+        Largest odd number in a string
+        Largest rectangle in a histogram
+        Leaders in an Array problem
+        Left Rotate an array by one place
+        Left rotate an array by D places
+        Lemonade Change
+        Length of Loop in LL
+        Letter Combinations of a Phone number
+        Level order Traversa evel order traversal in spiral form
+        Linear Search
+        Longest Common Prefix
+        Longest Consecutive Sequence in an Array
+        Longest String with All Prefixes
+        Longest Substring Without Repeating Characters
+        Longest Substring with At Most K Distinct Characters
+        Longest happy prefix
+        Longest subarray with given sum K(positives)
+        Longest subarray with sum K (Positives + Negatives)
+        M Coloring Problem
+        Majority Element (2times)
+        Majority Element 3times)
+        Making a Large Island
+        Matrix Median
+        Max Consecutive Ones III
+        Maximal Rectangles
+        Maximum Consecutive Ones
+        Maximum Product Subarray
+        Maximum XOR With an Element From Array
+        Maximum XOR of two numbers in an array
+        Maximum path sum
+        Maximum point you can obtain from cards
+        Maximum width of a Binary Tree
+        Median of 2 sorted arrays
+        Merge 2 BST's
+        Merge Intervals
+        Merge Overlapping Subintervals
+        Merge Sort
+        Merge two sorted arrays without extra space
+        Middle of a LinkedList [TortoiseHare Method]
+        Min Heap and Max Heap Implementation
+        Minimize Max Distance to Gas Station
+        Minimum Spanning Tree
+        Minimum Window Substring
+        Minimum days to make M bouquets
+        Minimum number of bracket reversals needed to make an expression balanced
+        Minimum number of platforms required for a railway
+        Minimum path sum in Grid 
+        Minimum path sum in Triangular Grid 
+        Minimum steps to reach end from start by performing multiplication and mod operations with array elements
+        Minimum time taken to BURN the Binary Tree from a Node
+        Morris Inorder Traversal of a Binary Tree
+        Morris Preorder Traversal of a Binary Tree
+        Most stones removed with same rows or columns
+        Move Zeros to end
+        N Queen
+        N meetings in one room
+        Next Greater Element
+        Next Greater Element 2
+        Next Permutation
+        Ninja's Training 
+        Number of Distinct Islands
+        Number of Distinct Substrings in a String
+        Number of Enclaves
+        Number of island II
+        Number of operations to make network connected
+        Number of provinces (leetcode)
+        Number of substring containing all three characters
+        Number of ways to arrive at destination
+        Painter's partition
+        Palindrome Partitioning
+        Pascal's Triangle
+        Path with minimum effort
+        Postfix to Infix
+        Postfix to Prefix Conversion
+        Pow(x, n)
+        Power Set
+        Power(n, x)
+        Prefix to Infix Conversion
+        Prefix to Postfix Conversion
+        Preorder Traversal of Binary Tree
+        Preorder, Inorder, and Postorder Traversal in one Traversal
+        Prim's Algorithm
+        Print 1 to N using recursion
+        Print N to 1 using recursion
+        Print all Divisors
+        Print all subsequencPwer Set
+        Print all the Nodes at a distance of K in a Binary Tree
+        Print name N times using recursion
+        Print subarray with maximum subarray sum (extended version of above problem)
+        Print the matrix in spiral manner
+        Program for Shortest Job First (or SJF) CPU Scheduling
+        Quick Sort
+        Rabin Karp
+        Rat in a Maze
+        Rearrange the array in alternating positive and negative items
+        Recover BST | Correct BST with two nodes swapped
+        Recursive Bubble Sort
+        Recursive Insertion Sort
+        Remove Nth node from the back of the LL
+        Remove duplicates from Sorted array
+        Remove duplicates from sorted DLL
+        Remove k Digits
+        Replace each array element by its corresponding rank
+        Requirements needed to construct a Unique Binary Tree | Theory
+        Reverse Every Word in A String
+        Reverse LL in group of given size K
+        Reverse Pairs
+        Reverse a DLL
+        Reverse a LL [Recursive]
+        Reverse a LinkedList [Iterative]
+        Reverse a Number
+        Reverse an array
+        Reverse words in a given strin alindrome Check
+        RigLft View of Binary Tree
+        Root to Node Path in Binary Tree
+        Rotate Matrix by 90 degrees
+        Rotate a LL
+        Rotten Oranges
+        Search Insert Position
+        Search an element in the LL
+        Search in Rotated Sorted Array I
+        Search in Rotated Sorted Array II
+        Search in a 2 D matrix
+        Search in a Binary Search Tree
+        Search in a row and column wise sorted matrix
+        Second Largest Element in an Array without sorting
+        Segrregate odd and even nodes in LL
+        Selection Sort
+        Serialize and deserialize Binary Tree
+        Set Matrix Zeros
+        Shortest Palindrome
+        Shortest Path in DAG
+        Shortest Path in UG with unit weights
+        Shortest path in a binary maze
+        Sieve of Eratosthenes
+        Single element in a Sorted Array
+        Sliding Window maximum
+        Sort Characters by frequency
+        Sort LL
+        Sort a LL of 0's 1's and 2's by changing links
+        Sort an array of 0's 1's and 2's
+        Stock Buy and Sell
+        Stock span problem
+        Sudoko r
+        Sum of first N numbers
+        Sum of subarray minimum
+        Sum of subarray ranges
+        Surrounded Regions
+        Switch Statement
+        Symmetric Binary Tree
+        The Celebrity Problem
+        Time Complexity [Learn Basics, and then analyse in next Steps]
+        Top View of Binary Tree
+        Topo Sort
+        Trapping Rainwater
+        Two Sum In BST | Check if there exists a pair with Sum K
+        Understand recursion by print something N times
+        User Inpu utput
+        Valid Paranthesis Checker
+        Vertical Order Traversal of Binary Tree
+        What are arrays, strings?
+        While loops
+        Why priority Queue is used in Djisktra's Algorithm
+        Word Search
+        Zig Zag Traversal of Binary Tree
+        check whether one string is a rotation of another
+        longest repeating character replacement
